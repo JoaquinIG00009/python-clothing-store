@@ -21,7 +21,7 @@ h1,h2,h3,h4,h5,h6{
 	border-radius: 0 0 4px 4px;
 }
 .bg-dark{
-	background-color: #494949!important;
+	background-color: #494949 !important;
 }
 #cart-icon{
 	width:25px;
@@ -78,5 +78,13 @@ h1,h2,h3,h4,h5,h6{
 	opacity: .6;
 }
 .hidden{
-	display: none!important;
+	display: none !important;
+}
+nav{
+    padding: 15px !important;
+}
+#navbarSupportedContent{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
