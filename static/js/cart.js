@@ -25,6 +25,18 @@ function addCookieItem(productId, action) {
             cart[productId]["quantity"] += 1;
         }
     }
+
+    if(action == "remove") {
+        cart[productId]["quantity"] -= 1;
+
+        if(cart[productId]["quantity"] <= 0) {
+            console.log("Item should be deleted");
+            delete cart[productId];
+        }
+    }
+
+    document.cookie = "cart=" + JSON.stringify(cart) + ";domain=;path=/";
+    location.reload();
 }
 
 function updateUserOrder(productId, action){
